@@ -71,22 +71,5 @@ function init() {
         writeToFile('README.md', generateMarkdown({ ...response }))
     })
 }
-
-
 // Function call to initialize app
 init();
-
-
-
-
-// newReadMe(project, rmLayout);
-
-// function newReadMe(fileName)
-// (data) => {
-//     const fileName = `${data.name.toLowerCase().split(' ').join('')}.md`;
-
-
-//     fs.writeFile(fileName, JSON.stringify(data, project, '\t'), (err) =>
-//         err ? console.log(err) : console.log('Success!')
-//     )
-// };

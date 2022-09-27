@@ -1,8 +1,4 @@
-# a
-
-  // //layout of where the questions answers should be displayed 
-  // let rmLayout =# 
-
+# Andrew
   
 *[description]
 a
@@ -11,30 +7,30 @@ a
 *[usage]
 a
 *[licence]
-gpl
+Mit
 *[Contributing]
-a
+
 *[test]
 a
 *[questions]
 a
 a
 
-##Installation
+## Installation
 
 a
 
-##usage
+## usage
 
 a
 
-##licence
+## licence
 
-gpl
+Mit
 
 ##Contributing
 
-a
+
 
 ##test
 
