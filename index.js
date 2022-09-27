@@ -35,7 +35,7 @@ const questions = [
         type: 'list',
         message: 'please select a licence.',
         name: 'licence',
-        choices: ['Mit', 'gpl', 'apache', 'gnu', 'N/A'],//research these licences and add sections for when each one is chosen
+        choices: ['Mit', 'gpl', 'apache', 'gnu', 'N/A'],
     },
     {
         type: 'input',
@@ -43,7 +43,7 @@ const questions = [
         message: 'please enter the contribution guidelines for this project. ',
     },
     {
-        type: 'input',//unsure what the test actually is research and adjust this section
+        type: 'input',
         name: 'test',
         message: 'Enter a test cenario?',
     },

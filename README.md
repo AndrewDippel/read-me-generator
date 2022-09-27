@@ -1,46 +1,30 @@
 # Andrew
-  
 *[description]
 a
 *[Installation]
-a
+d
 *[usage]
-a
+f
 *[licence]
-Mit
+gnu
 *[Contributing]
-
+g
 *[test]
-a
+h
 *[questions]
-a
-a
-
+j
+k
 ## Installation
-
-a
-
-## usage
-
-a
-
-## licence
-
-Mit
-
-##Contributing
-
-
-
-##test
-
-a
-
-##questions
-
-a
-
-##github
-
-a
-
+d
+## Usage
+f
+## Licence
+gnu
+## Contributing
+g
+## Test
+h
+## Questions
+j
+## Github
+k

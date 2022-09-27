@@ -30,19 +30,18 @@ ${data.email}
 ${data.github}
 ## Installation
 ${data.installation}
-## usage
+## Usage
 ${data.usage}
-## licence
+## Licence
 ${data.licence}
-##Contributing
+## Contributing
 ${data.Contributing}
-##test
+## Test
 ${data.test}
-##questions
+## Questions
 ${data.email}
-##github
+## Github
 ${data.github}
 `;
 }
-
 module.exports = generateMarkdown;
