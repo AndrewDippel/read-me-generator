@@ -1,11 +1,14 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer');
 const fs = require('fs');
+const path = require('path');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown')
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input',
-        name: 'project',
+        name: 'title',
         message: 'Project name?',
     },
     {
@@ -20,7 +23,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Installation',
+        name: 'installation',
         message: 'how do i install this project?',
     },
     {
@@ -57,10 +60,18 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+}
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    inquirer.prompt(questions).then((response) => {
+        console.log('Generating readme')
+        writeToFile('README.md', generateMarkdown({ ...response }))
+    })
+}
+
 
 // Function call to initialize app
 init();
@@ -68,14 +79,14 @@ init();
 
 
 
-newReadMe(project, rmLayout);
+// newReadMe(project, rmLayout);
 
-function newReadMe(fileName)
-(data) => {
-    const fileName = `${data.name.toLowerCase().split(' ').join('')}.md`;
+// function newReadMe(fileName)
+// (data) => {
+//     const fileName = `${data.name.toLowerCase().split(' ').join('')}.md`;
 
 
-    fs.writeFile(fileName, JSON.stringify(data, project, '\t'), (err) =>
-        err ? console.log(err) : console.log('Success!')
-    )
-};
+//     fs.writeFile(fileName, JSON.stringify(data, project, '\t'), (err) =>
+//         err ? console.log(err) : console.log('Success!')
+//     )
+// };
