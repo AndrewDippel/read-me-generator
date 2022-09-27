@@ -32,12 +32,12 @@ const questions = [
         type: 'list',
         message: 'please select a licence.',
         name: 'licence',
-        choices: ['Mit', 'gpl', 'apache', 'gnu', 'N/A'],//change to different licences 
+        choices: ['Mit', 'gpl', 'apache', 'gnu', 'N/A'],//research these licences and add sections for when each one is chosen
     },
     {
         type: 'input',
         name: 'Contributing',
-        message: 'enter the contributors of the project.',
+        message: 'please enter the contribution guidelines for this project. ',
     },
     {
         type: 'input',//unsure what the test actually is research and adjust this section
@@ -68,30 +68,6 @@ init();
 
 
 
-let rmLayout = `# ${project}
-
-*[description]
-*[Installation]
-*[usage]
-*[licence]
-*[Contributing]
-*[test]
-*[questions]
-
-##Installation
-${Installation}
-##usage
-${usage}
-##licence
-${licence}
-##Contributing
-${Contributing}
-##test
-${test}
-##questions
-${email}
-##github
-${github}`;
 newReadMe(project, rmLayout);
 
 function newReadMe(fileName)
