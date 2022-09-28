@@ -45,8 +45,8 @@ ${data.Contributing}
 ## Test
 ${data.test}
 ## Questions
-For any Questions please contact me through either github or email. Thanks.\n
-${data.email}\n
+Github: ${data.email}\n
+If you have any questions feel free to email me @:
 ${data.github}
 `;
 }
