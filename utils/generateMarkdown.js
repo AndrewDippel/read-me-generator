@@ -1,18 +1,18 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
-  const typeOfLicense = data.typeOfLicense;
+  const typeOfLicense = data.License;
   let badgeLink = " ";
-  if (typeOfLicense === "MIT Licence") {
+  if (typeOfLicense === "MIT License") {
     badgeLink = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
   };
   if (typeOfLicense === "Eclipse Public License") {
     badgeLink = `[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`
   };
-  if (typeOfLicense === "Apache Licence") {
+  if (typeOfLicense === "Apache License") {
     badgeLink = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
   };
-  if (typeOfLicense === "GNU Licence") {
+  if (typeOfLicense === "GNU License") {
     badgeLink = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
   };
   if (typeOfLicense === "N/A") {
@@ -29,7 +29,7 @@ function generateMarkdown(data) {
 * [description](#description)
 * [Installation](#Installation)
 * [usage](#Usage)
-* [licence](#Licence)
+* [license](#License)
 * [Contributing](#Contributing)
 * [test](#Test)
 * [questions](#Questions)
@@ -38,7 +38,7 @@ function generateMarkdown(data) {
 ${data.installation}
 ## Usage
 ${data.usage}
-## Licence
+## License
 ${renderLicenseBadge(data)}
 ## Contributing
 ${data.Contributing}
