@@ -11,6 +11,8 @@
 
 ## Installation
 open integrated terminal on parent folder containing index .js file and enter "node index.js" into the terminal
+
+here is a video Demo of the application: https://drive.google.com/file/d/1XEkNjlOhZzdH16QKU9WiDK0UrHcP_FDE/view
 ## Usage
 follow the prompts and add your information as needed
 ## License
